@@ -1,0 +1,48 @@
+<div class="container-fluid p-0">
+    <h2 class="h3 mb-3">Github Users</h2>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div id="datatables-reponsive_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div id="datatables-reponsive_filter" class="dataTables_filter">
+                                    <label>Search:
+                                        <input type="search" [(ngModel)]="searchKeyword" class="form-control form-control-sm" placeholder=""
+                                            aria-controls="datatables-reponsive"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table id="datatables-reponsive"
+                                    class="table table-striped dataTable no-footer dtr-inline">
+                                    <thead>
+                                        <tr>
+                                            <th class="sorting sorting_asc"></th>
+                                            <th class="sorting sorting_asc">Username</th>
+                                            <th class="sorting sorting_asc">Type</th>
+                                            <th class="sorting sorting_asc">Repo URL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let user of users | filter:searchKeyword" [routerLink]="[user.login]"    >
+                                            <td >
+                                                <img [src]="user.avatar_url" />
+                                            </td>
+                                            <td>{{user.login}}</td>
+                                            <td>{{user.type}}</td>
+                                            <td>{{user.repos_url}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ngClass]="{'even':index +1 % 2 === 0, 'od':index +1 % 2 !== 0 }" -->

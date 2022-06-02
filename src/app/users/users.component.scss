@@ -1,0 +1,47 @@
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+table.dataTable {
+    border-collapse: separate!important;
+    border-spacing: 0;
+    clear: both;
+    margin-bottom: 6px!important;
+    margin-top: 6px!important;
+    max-width: none!important;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.table thead, .table tr {
+    border-color: #dee6ed;
+}
+
+.table tr {
+    border-color: #dee6ed;
+    cursor: pointer;
+}
+table.dataTable>thead>tr>th:not(.sorting_disabled) {
+    padding-right: 30px;
+}
+.table>:not(:first-child) {
+    border-top-width: 1px;
+}
+.table>:not(:first-child) {
+    border-top: 2px solid;
+}
+.table tbody, .table td, .table tfoot, .table th, .table thead, .table tr {
+    border-color: #dee6ed;
+}
+.table>tbody {
+    vertical-align: inherit;
+}
+
+table.dataTable.table-striped>tbody>tr.odd {
+    background-color: #f4f7f9;
+}

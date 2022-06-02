@@ -1,0 +1,18 @@
+.navbar-bg {
+    background: #fff;
+}
+.navbar {
+    border-bottom: 0;
+    box-shadow: 0 0 2rem 0 rgb(41 48 66 / 10%);
+    align-items: center;
+    display: flex;
+    padding: 0.875rem 1.25rem;
+    position: relative;
+    color: #495057;
+    font-size: 20px;
+}
+
+.navbar-expand {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}

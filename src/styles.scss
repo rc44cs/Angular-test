@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+    font-family: monospace;;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  transition: margin-left 0.35s ease-in-out, left 0.35s ease-in-out,
+    margin-right 0.35s ease-in-out, right 0.35s ease-in-out;
+  width: 100%;
+}
+
+
+.content {
+    direction: ltr;
+    flex: 1;
+    padding: 2.5rem 2.5rem 1.5rem;
+    background-color: #F7F9FC;
+}
+
+.card {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
+    margin-bottom: 24px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}   
+
+.card-header:first-child {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 0 solid transparent;
+    margin-bottom: 0;
+    padding: 1rem 1.25rem;
+}
+
+.card-header {
+    border-bottom-width: 1px;
+}
+
+.card-title {
+    color: #495057;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.text-center {
+    text-align: center!important;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem!important;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem!important;
+}
+a {
+    color: #3f80ea;
+    text-decoration: none;
+}
